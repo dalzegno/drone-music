@@ -5,6 +5,7 @@ import Link from "next/link";
 export default function InitAudioContext() {
   return (
     <Link
+      className="bg-amber-500"
       href="/introduction"
       onClick={() => {
         const audioContext = getAudioContext();

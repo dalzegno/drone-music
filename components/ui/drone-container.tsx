@@ -16,6 +16,7 @@ let oscillators: OscillatorNode[] = [];
 
 export default function DroneContainer() {
   const [isPlaying, setIsPlaying] = useState(false);
+
   useEffect(() => {
     console.log(isPlaying);
     if (isPlaying) {
@@ -23,16 +24,17 @@ export default function DroneContainer() {
       oscillator.connect(gain);
       oscillator.start();
       oscillators.push(oscillator);
-      gainHelper.SetAdsrOnGainNode(1, gain, 1);
+      gainHelper.SetAdsrOnGainNode(1, gain, 0.1);
     } else if (!isPlaying) {
       oscillators.forEach((o) => {
-        o.stop(audioContext!.currentTime + 2);
+        o.stop(audioContext!.currentTime + 0.1);
       });
       gain.gain.setValueAtTime(gain.gain.value, audioContext!.currentTime);
-      gain.gain.linearRampToValueAtTime(0, audioContext!.currentTime + 2);
+      gain.gain.linearRampToValueAtTime(0, audioContext!.currentTime + 0.1);
       oscillators = [];
     }
   }, [isPlaying]);
+
   return (
     <div>
       <button
