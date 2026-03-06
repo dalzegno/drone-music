@@ -2,7 +2,7 @@
   "drones": [
     {
       "id": 1,
-      "name": "Tanpura_male_Pa-SA-SA-sa",
+      "name": "Tanpura Pa-SA-SA-sa",
       "notes": [
         { "name": "Pa", "ratio": "3/2", "ratioNumber": 1.5 },
         { "name": "SA", "ratio": "2/1", "ratioNumber": 2 },

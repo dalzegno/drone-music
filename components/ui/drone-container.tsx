@@ -4,8 +4,9 @@ import GainHelper from "@/audio-context/gainHelper";
 import OscillatorHelper from "@/audio-context/oscillatorHelper";
 import { getAudioContext } from "@/audio-context/singletons/audioContext";
 import { drones } from "@/data/drones/drones.json";
+import { Drone } from "@/lib/types";
 
-const audioContext = getAudioContext();
+const audioContext = getAudioContext() as AudioContext;
 const oscHelper = new OscillatorHelper();
 const gainHelper = new GainHelper();
 
@@ -24,8 +25,8 @@ export default function DroneContainer() {
     console.log(isPlaying);
 
     if (isPlaying) {
-      const selectedDrone = drones.find((d) => d.id === 1);
-      selectedDrone?.notes.forEach((n) => {
+      const selectedDrone = drones.find((d) => d.id === 1) as Drone;
+      selectedDrone.notes.forEach((n) => {
         const osc = oscHelper.CreateOscillatorNode(
           fundamentalFrequency * n.ratioNumber,
         );
