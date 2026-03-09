@@ -12,6 +12,7 @@ export default function DroneContainer({
   drone: Drone;
 }) {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [firstPlayClicked, setFirstPlayClicked] = useState(false);
   return (
     <div>
       {drone.notes.map((n, index) => (
@@ -19,9 +20,16 @@ export default function DroneContainer({
           key={index}
           frequency={fundamentalFrequency * n.ratioNumber}
           isPlaying={isPlaying}
+          firstPlayClicked={firstPlayClicked}
         ></DroneNote>
       ))}
-      <button type="button" onClick={() => setIsPlaying(!isPlaying)}>
+      <button
+        type="button"
+        onClick={() => {
+          setIsPlaying(!isPlaying);
+          setFirstPlayClicked(true);
+        }}
+      >
         {isPlaying ? <p>pause</p> : <p>play</p>}
       </button>
     </div>

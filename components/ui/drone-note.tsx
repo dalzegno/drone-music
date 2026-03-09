@@ -12,9 +12,11 @@ primaryGain.connect(audioContext.destination);
 export default function DroneNote({
   frequency,
   isPlaying,
+  firstPlayClicked,
 }: {
   frequency: number;
   isPlaying: boolean;
+  firstPlayClicked: boolean;
 }) {
   const [volume, setVolume] = useState(0.5);
 
@@ -23,6 +25,11 @@ export default function DroneNote({
 
   useEffect(() => {
     if (isPlaying) {
+      gainNode.gain.setValueAtTime(0, audioContext.currentTime);
+      gainNode.gain.linearRampToValueAtTime(
+        volume,
+        audioContext.currentTime + 1,
+      );
       let oscillator = audioContext.createOscillator();
       oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
 
@@ -30,17 +37,27 @@ export default function DroneNote({
       oscillator.start();
 
       oscillators.push(oscillator);
-    } else if (!isPlaying) {
+    } else if (!isPlaying && firstPlayClicked) {
+      gainNode.gain.setValueAtTime(
+        gainNode.gain.value,
+        audioContext.currentTime,
+      );
+      gainNode.gain.linearRampToValueAtTime(0, audioContext.currentTime + 1);
       oscillators.forEach((o) => {
-        o.stop();
+        o.stop(audioContext.currentTime + 1);
       });
       oscillators = [];
     }
-  }, [isPlaying, frequency, gainNode]);
+  }, [isPlaying]);
 
   useEffect(() => {
-    gainNode.gain.setValueAtTime(volume, audioContext.currentTime);
-  }, [volume, gainNode]);
+    if (isPlaying) {
+      gainNode.gain.linearRampToValueAtTime(
+        volume,
+        audioContext.currentTime + 0.1,
+      );
+    }
+  }, [volume]);
 
   return (
     <div>
@@ -48,7 +65,9 @@ export default function DroneNote({
         type="range"
         min="0"
         max="100"
-        onChange={(e) => setVolume(+e.target.value / 100)}
+        onChange={(e) => {
+          setVolume(+e.target.value / 100);
+        }}
       ></input>
     </div>
   );
