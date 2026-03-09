@@ -4,8 +4,14 @@ export interface Drone {
   notes: Note[];
 }
 
+export interface Scale {
+  id: number;
+  name: string;
+  notes: Note[];
+}
+
 export interface Note {
   name: string;
-  ratio: string;
-  ratioNumber: number;
+  ratio?: string;
+  ratioNumber?: number;
 }

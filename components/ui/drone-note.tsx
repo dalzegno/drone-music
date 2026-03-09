@@ -1,6 +1,7 @@
 "use client";
 
 import { getAudioContext } from "@/audio-context/singletons/audioContext";
+import { Note } from "@/lib/types";
 import { useEffect, useState } from "react";
 
 const audioContext = getAudioContext() as AudioContext;
@@ -10,10 +11,12 @@ primaryGain.gain.setValueAtTime(0.5, audioContext.currentTime);
 primaryGain.connect(audioContext.destination);
 
 export default function DroneNote({
+  note,
   frequency,
   isPlaying,
   firstPlayClicked,
 }: {
+  note: Note;
   frequency: number;
   isPlaying: boolean;
   firstPlayClicked: boolean;
@@ -60,7 +63,8 @@ export default function DroneNote({
   }, [volume]);
 
   return (
-    <div>
+    <div className="flex">
+      <p>{note.name}</p>
       <input
         type="range"
         min="0"

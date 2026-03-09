@@ -1,0 +1,18 @@
+{
+  "scales": [
+    {
+      "id": 1,
+      "name": "Sama Gana Scale",
+      "notes": [
+        { "name": "Sa", "ratio": "1/1" },
+        { "name": "Re", "ratio": "9/8" },
+        { "name": "ga", "ratio": "32/27" },
+        { "name": "ma", "ratio": "4/3" },
+        { "name": "Pa", "ratio": "3/2" },
+        { "name": "Dha", "ratio": "27/16" },
+        { "name": "ni", "ratio": "16/9" },
+        { "name": "SA", "ratio": "2/1" }
+      ]
+    }
+  ]
+}

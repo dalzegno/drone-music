@@ -1,8 +1,10 @@
 "use client";
 
 import { Drone } from "@/lib/types";
+import { Scale } from "@/lib/types";
 import DroneNote from "./drone-note";
 import { useState } from "react";
+import { convertRatioToNumber } from "@/utils/ratioConverter";
 
 export default function DroneContainer({
   fundamentalFrequency,
@@ -18,7 +20,10 @@ export default function DroneContainer({
       {drone.notes.map((n, index) => (
         <DroneNote
           key={index}
-          frequency={fundamentalFrequency * n.ratioNumber}
+          note={n}
+          frequency={
+            fundamentalFrequency * convertRatioToNumber(n.ratio as string)
+          }
           isPlaying={isPlaying}
           firstPlayClicked={firstPlayClicked}
         ></DroneNote>
