@@ -6,11 +6,6 @@ import type { Drone } from "@/lib/types";
 
 export default function Introduction() {
   const selectedDrone = drones.find((d) => d.id === 1) as Drone;
-  let oscillators: OscillatorNode[] = [];
-
-  const gainHelper = new GainHelper();
-  gainHelper.InitializePrimaryGain(0.5);
-
   const fundamentalFrequency = 110;
 
   return (
@@ -21,7 +16,6 @@ export default function Introduction() {
         <DroneContainer
           key={index}
           frequency={fundamentalFrequency * n.ratioNumber}
-          gainHelper={gainHelper}
         ></DroneContainer>
       ))}
     </div>
