@@ -36,11 +36,11 @@ export default function DroneNote({
       });
       oscillators = [];
     }
-  }, [isPlaying]);
+  }, [isPlaying, frequency, gainNode]);
 
   useEffect(() => {
     gainNode.gain.setValueAtTime(volume, audioContext.currentTime);
-  }, [volume, audioContext]);
+  }, [volume, gainNode]);
 
   return (
     <div>
