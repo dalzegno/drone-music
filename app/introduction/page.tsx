@@ -15,7 +15,7 @@ export default function Introduction() {
       {selectedDrone.notes.map((n, index) => (
         <DroneContainer
           key={index}
-          frequency={fundamentalFrequency * n.ratioNumber}
+          fundamentalFrequency={fundamentalFrequency}
         ></DroneContainer>
       ))}
     </div>

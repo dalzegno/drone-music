@@ -1,5 +1,9 @@
 "use client";
 
-export default function DroneContainer({ frequency }: { frequency: number }) {
+export default function DroneContainer({
+  fundamentalFrequency,
+}: {
+  fundamentalFrequency: number;
+}) {
   return <div></div>;
 }
