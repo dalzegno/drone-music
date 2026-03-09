@@ -1,5 +1,3 @@
-"use client";
-import GainHelper from "@/audio-context/gainHelper";
 import DroneContainer from "@/components/ui/drone-container";
 import { drones } from "@/data/drones/drones.json";
 import type { Drone } from "@/lib/types";
@@ -11,13 +9,12 @@ export default function Introduction() {
   return (
     <div className="flex min-h-screen items-center justify-center flex-col">
       <p>Musical drones are long sustained notes</p>
+      <p>here's an example ffs</p>
 
-      {selectedDrone.notes.map((n, index) => (
-        <DroneContainer
-          key={index}
-          fundamentalFrequency={fundamentalFrequency}
-        ></DroneContainer>
-      ))}
+      <DroneContainer
+        fundamentalFrequency={fundamentalFrequency}
+        drone={selectedDrone}
+      ></DroneContainer>
     </div>
   );
 }
