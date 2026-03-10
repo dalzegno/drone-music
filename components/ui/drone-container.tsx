@@ -37,6 +37,7 @@ export default function DroneContainer({
         ></DroneNote>
       ))}
       <button
+        className="bg-amber-300 text-black p-1 rounded-sm cursor-pointer"
         type="button"
         onClick={() => {
           setIsPlaying(!isPlaying);

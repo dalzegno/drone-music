@@ -31,7 +31,7 @@ export default function Home() {
             </p>
             <p className="text-sm py-4">
               (you can change the volume by pressing the volume icon in the
-              bottom right corner)
+              bottom right corner (TODO!)
             </p>
             <InitAudioContext></InitAudioContext>
           </div>
