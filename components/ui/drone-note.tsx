@@ -6,16 +6,15 @@ import { useEffect, useState } from "react";
 
 const audioContext = getAudioContext() as AudioContext;
 let oscillators: OscillatorNode[] = [];
-const primaryGain = audioContext.createGain();
-primaryGain.gain.setValueAtTime(0.5, audioContext.currentTime);
-primaryGain.connect(audioContext.destination);
 
 export default function DroneNote({
+  primaryGain,
   note,
   frequency,
   isPlaying,
   firstPlayClicked,
 }: {
+  primaryGain: GainNode;
   note: Note;
   frequency: number;
   isPlaying: boolean;

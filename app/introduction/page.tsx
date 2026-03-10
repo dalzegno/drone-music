@@ -4,7 +4,7 @@ import { scales } from "@/data/scales/scales.json";
 import type { Drone } from "@/lib/types";
 
 export default function Introduction() {
-  const selectedDrone = scales.find((d) => d.id === 1) as Drone;
+  const selectedDrone = drones.find((d) => d.id === 1) as Drone;
   console.log(selectedDrone);
   const fundamentalFrequency = 110;
 
