@@ -9,6 +9,16 @@
         { "name": "SA", "ratio": "2/1", "ratioNumber": 2 },
         { "name": "Sa", "ratio": "1/1", "ratioNumber": 1 }
       ]
+    },
+    {
+      "id": 2,
+      "name": "Tanpura ma-SA-SA-sa",
+      "notes": [
+        { "name": "ma", "ratio": "4/3", "ratioNumber": 1.333 },
+        { "name": "SA", "ratio": "2/1", "ratioNumber": 2 },
+        { "name": "SA", "ratio": "2/1", "ratioNumber": 2 },
+        { "name": "Sa", "ratio": "1/1", "ratioNumber": 1 }
+      ]
     }
   ]
 }

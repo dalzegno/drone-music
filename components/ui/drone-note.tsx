@@ -56,23 +56,33 @@ export default function DroneNote({
     if (isPlaying) {
       gainNode.gain.linearRampToValueAtTime(
         volume,
-        audioContext.currentTime + 0.5,
+        audioContext.currentTime + 0.1,
       );
     }
   }, [volume]);
 
   return (
-    <div className="flex">
-      <input
-        type="range"
-        min="0"
-        max="100"
-        onChange={(e) => {
-          setVolume(+e.target.value / 100);
-        }}
-      ></input>
-      <p className="px-2">{note.name}</p>
-      <p>{frequency.toFixed(2)}Hz</p>
-    </div>
+    <tr>
+      <td>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value={volume * 100}
+          onChange={(e) => {
+            setVolume(+e.target.value / 100);
+          }}
+        ></input>
+      </td>
+      <td>
+        <p className="px-2">{note.name}</p>
+      </td>
+      <td>
+        <p>{frequency.toFixed(2)}Hz</p>
+      </td>
+      <td>
+        <p>{note.ratio?.toString()}</p>
+      </td>
+    </tr>
   );
 }
