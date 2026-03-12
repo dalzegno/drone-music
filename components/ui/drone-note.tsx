@@ -20,7 +20,7 @@ export default function DroneNote({
   isPlaying: boolean;
   firstPlayClicked: boolean;
 }) {
-  const [volume, setVolume] = useState(0.5);
+  const [volume, setVolume] = useState(0);
 
   const gainNode = audioContext.createGain();
   gainNode.connect(primaryGain);

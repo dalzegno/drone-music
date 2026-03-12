@@ -12,7 +12,7 @@
       "id": 2,
       "title": "The pitch of a note",
       "text": [
-        "The pitch of a note, also called its frequency is measured in Hertz, abbreviated Hz. Press the play button to listen to a note with 110Hz."
+        "The pitch of a note, also called its frequency is measured in Hertz, abbreviated Hz. Press the play button and adjust the volume slider to listen to a note with 110Hz."
       ]
     },
     {
@@ -24,7 +24,7 @@
     },
     {
       "id": 4,
-      "title": "The western 12-tone Equal temperament scale",
+      "title": "The western 12-tone scale",
       "text": [
         "Western classical music is based on a 12-tone scale. These are the notes most often used in western music today.",
         "Play around with the volume sliders to create your own harmonies"
@@ -44,7 +44,7 @@
       "id": 6,
       "title": "Drones",
       "text": [
-        "Pick a scale/drone system to listen to, improvise over or whatever the hell you can think of I don't know"
+        "Pick a scale/drone system to listen to, improvise over or whatever you can think of I don't know"
       ]
     }
   ]

@@ -23,7 +23,7 @@ export default function DroneIntroContainer({
   const [firstPlayClicked, setFirstPlayClicked] = useState(false);
 
   return (
-    <section className="w-xl text-center">
+    <section className="w-full text-center my-4">
       <table className="table-auto gap-4 bg-gray-400 w-full">
         <thead>
           <tr>
@@ -49,7 +49,7 @@ export default function DroneIntroContainer({
         </tbody>
       </table>
       <button
-        className="bg-amber-300 text-black p-1 rounded-sm cursor-pointer"
+        className="bg-amber-300 text-black p-1 rounded-sm cursor-pointer my-4"
         type="button"
         onClick={() => {
           setIsPlaying(!isPlaying);

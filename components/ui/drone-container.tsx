@@ -25,9 +25,12 @@ export default function DroneContainer({
   const defaultDrone = drones.find((d) => d.id === 1) as Drone;
   const [selectedDrone, setSelectedDrone] = useState(defaultDrone);
 
+  const [fundamental, setFundamental] = useState(fundamentalFrequency);
+
   return (
-    <section className="w-xl text-center">
+    <section className="w-full text-center">
       <select
+        className="bg-amber-600 p-2 my-2 text-black"
         onChange={(e) => {
           setIsPlaying(false);
           const selectedOption = drones.find(
@@ -42,6 +45,20 @@ export default function DroneContainer({
           </option>
         ))}
       </select>
+      <div className="inline">
+        <label htmlFor="fundamental-input" className="block">
+          Fundamental frequency
+        </label>
+        <input
+          id="fundamental-input"
+          type="number"
+          className="bg-amber-600 p-2 mx-2"
+          defaultValue={fundamental}
+          onChange={(e) => {
+            setFundamental(+e.target.value);
+          }}
+        ></input>
+      </div>
       <table className="table-auto gap-4 bg-gray-400 w-full">
         <thead>
           <tr>
@@ -57,9 +74,7 @@ export default function DroneContainer({
               key={index}
               primaryGain={primaryGain}
               note={n}
-              frequency={
-                fundamentalFrequency * convertRatioToNumber(n.ratio as string)
-              }
+              frequency={fundamental * convertRatioToNumber(n.ratio as string)}
               isPlaying={isPlaying}
               firstPlayClicked={firstPlayClicked}
             ></DroneNote>
@@ -67,7 +82,7 @@ export default function DroneContainer({
         </tbody>
       </table>
       <button
-        className="bg-amber-300 text-black p-1 rounded-sm cursor-pointer"
+        className="bg-amber-300 text-black p-1 rounded-sm cursor-pointer my-4"
         type="button"
         onClick={() => {
           setIsPlaying(!isPlaying);
