@@ -1,0 +1,51 @@
+{
+  "introductionTexts": [
+    {
+      "id": 1,
+      "title": "Drones in music",
+      "text": [
+        "Drones are long sustained notes used in various musical traditions, notably in Indian Classical music, bagpipes and ambient electronic music.",
+        "Drones can be used for meditation, improvisation and other stuff"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The pitch of a note",
+      "text": [
+        "The pitch of a note, also called its frequency is measured in Hertz, abbreviated Hz. Press the play button to listen to a note with 110Hz."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Creating a harmony",
+      "text": [
+        "Let's add another note to this drone. A perfect fifth is 3/2 the size of our fundamental note. Press play to give it a listen :)"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The western 12-tone Equal temperament scale",
+      "text": [
+        "Western classical music is based on a 12-tone scale. These are the notes most often used in western music today.",
+        "Play around with the volume sliders to create your own harmonies"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Indian Classical music",
+      "text": [
+        "The Tanpura (also referred to as Tambura) is a musical instrument with an intriguing and also fundamental place in today's Indian Classical music. As you may well know, it is not a lead instrument on which a melody is played. Rather it is used as a background instrument to create a drone accompaniment through the repetitive plucking of four open strings.",
+        "Below is the Sama Gana scale. The most common Tanpura tuning is sa, SA, SA, pa - meaning the fundament note, two octaves and pa. sa, SA, SA ma and sa SA SA ni are also commonly used depending on what is being played.",
+        "Play around with the volume sliders to see how they sound."
+      ],
+      "links": ["https://puretones.sadharani.com/learn/tanpuraworking-1/"]
+    },
+    {
+      "id": 6,
+      "title": "Drones",
+      "text": [
+        "Pick a scale/drone system to listen to, improvise over or whatever the hell you can think of I don't know"
+      ]
+    }
+  ]
+}

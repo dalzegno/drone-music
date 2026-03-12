@@ -19,6 +19,16 @@
         { "name": "SA", "ratio": "2/1", "ratioNumber": 2 },
         { "name": "Sa", "ratio": "1/1", "ratioNumber": 1 }
       ]
+    },
+    {
+      "id": 3,
+      "name": "Tanpura ni-SA-SA-sa",
+      "notes": [
+        { "name": "ni", "ratio": "16/9", "ratioNumber": 1.777 },
+        { "name": "SA", "ratio": "2/1", "ratioNumber": 2 },
+        { "name": "SA", "ratio": "2/1", "ratioNumber": 2 },
+        { "name": "Sa", "ratio": "1/1", "ratioNumber": 1 }
+      ]
     }
   ]
 }

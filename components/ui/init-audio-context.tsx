@@ -6,7 +6,7 @@ export default function InitAudioContext() {
   return (
     <Link
       className="bg-amber-500 p-2 rounded-sm hover:bg-amber-600 transition-colors"
-      href="/introduction"
+      href="/introduction/1"
       onClick={() => {
         const audioContext = getAudioContext();
       }}
