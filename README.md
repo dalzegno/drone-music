@@ -1,5 +1,7 @@
 # Music Project
-This project plays sounds in the browser and aims to provide an introduction to drones in music, with a short tutorial introduction and preset scales and modes.
+This project plays sounds in the browser and aims to provide an introduction to drones in music. <br/>
+Drones are long sustained notes that can be played together in a harmony. This website lets you play with harmonies and volume of individual notes. <br/>
+Includes a short tutorial introduction and preset scales and modes. <br/>
 The aim is to introduce different tuning methods and scales from varying traditions, to play with, learn from, improvise over and whatever else you can think of really :)
 
 ## Tech Stack
@@ -17,6 +19,10 @@ The aim is to introduce different tuning methods and scales from varying traditi
 - 12-tone Just Intonation
 - Sama Gana scale
 - 3 Tanpura tuning drones
+
+##### Planned Features
+- More presets
+- More waveforms to choose from (different sounds)
 
 ##### Installation
 git clone https://github.com/dalzegno/drone-music.git <br/>
