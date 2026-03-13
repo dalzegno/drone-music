@@ -23,6 +23,7 @@ The aim is to introduce different tuning methods and scales from varying traditi
 ##### Planned Features
 - More presets
 - More waveforms to choose from (different sounds)
+- Customizable/Create your own presets
 
 ##### Installation
 git clone https://github.com/dalzegno/drone-music.git <br/>
