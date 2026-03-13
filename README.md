@@ -18,3 +18,10 @@ WebAudio API
 - Sama Gana scale
 - 3 Tanpura tuning drones
 
+##### Installation
+git clone https://github.com/dalzegno/drone-music.git
+npm install
+npm run dev
+
+#### Author
+Victor N
