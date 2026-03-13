@@ -3,9 +3,9 @@ This project plays sounds in the browser and aims to provide an introduction to 
 The aim is to introduce different tuning methods and scales from varying traditions, to play with, learn from, improvise over and whatever else you can think of really :)
 
 ## Tech Stack
-Next.Js
-TypeScript
-WebAudio API
+- Next.Js
+- TypeScript
+- WebAudio API
 
 ### Features
 - Preset scales and drones
@@ -19,8 +19,8 @@ WebAudio API
 - 3 Tanpura tuning drones
 
 ##### Installation
-git clone https://github.com/dalzegno/drone-music.git
-npm install
+git clone https://github.com/dalzegno/drone-music.git <br/>
+npm install <br/>
 npm run dev
 
 #### Author
