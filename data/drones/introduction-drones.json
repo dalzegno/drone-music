@@ -18,19 +18,19 @@
     {
       "id": 4,
       "notes": [
-        { "name": "Unison (C)", "ratio": "1/1" },
-        { "name": "Semitone (C#)", "ratio": "16/15" },
-        { "name": "Major Tone(D)", "ratio": "9/8" },
-        { "name": "Minor Third (E♭)", "ratio": "6/5" },
-        { "name": "Major Third (E)", "ratio": "5/4" },
-        { "name": "Perfect Fourth (F)", "ratio": "4/3" },
-        { "name": "Diminished Fifth (G♭)", "ratio": "64/45" },
-        { "name": "Perfect Fifth (G)", "ratio": "3/2" },
-        { "name": "Minor Sixth (A♭)", "ratio": "8/5" },
-        { "name": "Major Sixth (A)", "ratio": "5/3" },
-        { "name": "Minor Seventh (B♭)", "ratio": "9/5" },
-        { "name": "Major Seventh (B)", "ratio": "15/8" },
-        { "name": "Octave (C)", "ratio": "2/1" }
+        { "name": "Unison", "ratio": "1/1" },
+        { "name": "Semitone", "ratio": "16/15" },
+        { "name": "Major Tone", "ratio": "9/8" },
+        { "name": "Minor Third", "ratio": "6/5" },
+        { "name": "Major Third", "ratio": "5/4" },
+        { "name": "Perfect Fourth", "ratio": "4/3" },
+        { "name": "Diminished Fifth", "ratio": "64/45" },
+        { "name": "Perfect Fifth", "ratio": "3/2" },
+        { "name": "Minor Sixth", "ratio": "8/5" },
+        { "name": "Major Sixth", "ratio": "5/3" },
+        { "name": "Minor Seventh", "ratio": "9/5" },
+        { "name": "Major Seventh", "ratio": "15/8" },
+        { "name": "Octave", "ratio": "2/1" }
       ]
     },
     {
