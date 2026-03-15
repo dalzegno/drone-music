@@ -11,10 +11,10 @@ export default function Introduction() {
       <p>Musical drones are long sustained notes</p>
       <p>here's an example ffs</p>
 
-      <DroneContainer
+      {/* <DroneContainer
         fundamentalFrequency={fundamentalFrequency}
         drones={drones}
-      ></DroneContainer>
+      ></DroneContainer> */}
     </div>
   );
 }
