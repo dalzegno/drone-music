@@ -3,9 +3,12 @@
 import { getAudioContext } from "@/audio-context/singletons/audioContext";
 import { Note } from "@/lib/types";
 import { useEffect, useState } from "react";
+import { real, imag } from "@/data/waveforms/wave-tables/Bass_Fuzz.json";
 
 const audioContext = getAudioContext() as AudioContext;
 let oscillators: OscillatorNode[] = [];
+
+const bassfuzz = new PeriodicWave(audioContext, { real: real, imag: imag });
 
 export default function DroneNote({
   primaryGain,
@@ -34,6 +37,8 @@ export default function DroneNote({
       );
       let oscillator = audioContext.createOscillator();
       oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
+
+      //oscillator.setPeriodicWave(bassfuzz);
 
       oscillator.connect(gainNode);
       oscillator.start();

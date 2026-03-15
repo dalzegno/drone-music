@@ -40,12 +40,12 @@ export default async function IntroductionPage({
       )}
       {+id > 1 && +id < 6 ? (
         <DroneIntroContainer
-          fundamentalFrequency={110}
+          fundamentalFrequency={220}
           drone={drone}
         ></DroneIntroContainer>
       ) : +id > 5 ? (
         <DroneContainer
-          fundamentalFrequency={110}
+          fundamentalFrequency={220}
           drones={drones}
         ></DroneContainer>
       ) : (
