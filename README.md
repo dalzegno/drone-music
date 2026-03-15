@@ -5,7 +5,7 @@ Includes a short tutorial introduction and preset scales and modes. <br/>
 The aim is to introduce different tuning methods and scales from varying traditions, to play with, learn from, improvise over and whatever else you can think of really :)
 
 ## Demo
-https://drone-music-klg2-ceqktlh65-dalzegnos-projects.vercel.app/introduction/1
+https://drone-music-klg2-ceqktlh65-dalzegnos-projects.vercel.app/
 
 ## Tech Stack
 - Next.Js
